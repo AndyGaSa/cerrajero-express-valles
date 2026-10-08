@@ -78,6 +78,7 @@ p { color: var(--muted); margin: 0 0 .7rem; }
   font-size: .95rem;
   line-height: 1.15;
   min-width: 0;
+  white-space: nowrap;
 }
 .logo span { display: none; }
 
@@ -94,10 +95,11 @@ p { color: var(--muted); margin: 0 0 .7rem; }
   border: 1px solid var(--border);
   border-radius: 10px;
   cursor: pointer;
+  font: inherit;
   font-size: 1.15rem;
 }
-.nav-toggle { grid-column: 3; }
-.lang-dd { grid-column: 2; position: relative; margin: 0; }
+.nav-toggle { grid-column: 3; justify-self: end; }
+.lang-dd { grid-column: 2; justify-self: end; position: relative; margin: 0; }
 .lang-btn span {
   position: absolute;
   width: 1px;
@@ -150,7 +152,6 @@ p { color: var(--muted); margin: 0 0 .7rem; }
   border-bottom: 1px solid var(--border);
 }
 .site-nav li:last-child a { border-bottom: 0; }
-.header-cta { display: none; }
 
 .btn {
   display: inline-flex;
@@ -163,6 +164,7 @@ p { color: var(--muted); margin: 0 0 .7rem; }
   text-decoration: none;
   border: 0;
 }
+.header-inner > a.header-cta { display: none; }
 .btn-cta { background: var(--cta); color: #fff; }
 .btn-cta:hover { background: var(--cta-hover); color: #fff; }
 .btn-whatsapp { background: var(--wa); color: #fff; }
@@ -208,6 +210,7 @@ p { color: var(--muted); margin: 0 0 .7rem; }
   grid-row: 1 / span 2;
   width: 36px;
   height: 36px;
+  margin: 0;
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -276,7 +279,7 @@ main details p { margin: 0 0 .9rem; }
   .logo { font-size: 1rem; letter-spacing: .14em; }
   .logo span { display: block; letter-spacing: .08em; font-size: .68rem; color: var(--cta); font-weight: 650; margin-top: .15rem; }
   .nav-toggle { display: none; }
-  .lang-dd { grid-column: auto; }
+  .lang-dd { grid-column: 3; }
   .lang-btn { width: auto; padding: 0 .85rem; gap: .4rem; }
   .lang-btn span { position: static; width: auto; height: auto; overflow: visible; clip: auto; }
   .site-nav, .site-nav.open {
@@ -289,8 +292,7 @@ main details p { margin: 0 0 .9rem; }
   }
   .site-nav ul { display: flex; gap: 1.1rem; }
   .site-nav a { padding: 0; border: 0; }
-  .header-cta { display: inline-flex; grid-column: 4; }
-  .lang-dd { grid-column: 3; }
+  .header-inner > a.header-cta { display: inline-flex; grid-column: 4; white-space: nowrap; }
   .hero-actions { flex-direction: row; }
   .hero-actions .btn { width: auto; }
   .rules { flex-direction: row; flex-wrap: wrap; }
