@@ -346,7 +346,7 @@ main details p { margin: 0 0 .9rem; }
   .hero-home h1,
   .hero-home .lead,
   .hero-home .hero-actions { grid-column: 1; margin-top: 0; }
-  .hero-home h1 { max-width: 14ch; font-size: clamp(2.4rem, 4vw, 3.4rem); }
+  .hero-home h1 { max-width: 11em; font-size: clamp(2.4rem, 4vw, 3.4rem); }
   .hero-home .lead { max-width: 36rem; font-size: 1.2rem; }
   .hero-home .rules {
     grid-column: 2;
