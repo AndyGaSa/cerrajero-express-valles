@@ -348,7 +348,7 @@ main details p { margin: 0 0 .9rem; }
     grid-column: 2;
     grid-row: 1 / span 3;
     flex-direction: column;
-    align-self: stretch;
+    align-self: center;
     justify-content: center;
     background: var(--surface);
     border: 1px solid var(--border);
