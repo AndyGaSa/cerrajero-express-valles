@@ -24,7 +24,7 @@ p { color: var(--muted); }
 .skip-link:focus { left: 1rem; top: 1rem; background: var(--cta); color: #fff; padding: .5rem; z-index: 9; }
 .site-header { position: sticky; top: 0; z-index: 20; background: rgba(11,18,32,.94); border-bottom: 1px solid var(--border); }
 .header-inner { display: flex; align-items: center; gap: .75rem; min-height: 58px; }
-.logo { color: #f3f6fb; text-decoration: none; font-weight: 750; letter-spacing: .22em; font-size: .95rem; display: flex; flex-direction: column; line-height: 1.1; }
+.logo { color: #f3f6fb; text-decoration: none; font-weight: 750; letter-spacing: .08em; font-size: .92rem; display: flex; flex-direction: column; line-height: 1.1; }
 .logo span { letter-spacing: .08em; font-size: .62rem; color: var(--cta); font-weight: 650; }
 .nav-toggle { margin-left: auto; background: var(--surface); color: var(--text); border: 1px solid var(--border); width: 44px; height: 44px; border-radius: 10px; }
 .site-nav { display: none; }
