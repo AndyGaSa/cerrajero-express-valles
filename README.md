@@ -1,6 +1,6 @@
-# A García Llaves
+# García Llaves
 
 Cerrajero de urgencias. Base La Llagosta. Tel 673 252 134.
-Web estática es / ca / en. Marca pública: A García Llaves.
+Web estática es / ca / en. Marca pública: García Llaves.
 
 Canónico: https://cerrajero-express-valles.vercel.app
