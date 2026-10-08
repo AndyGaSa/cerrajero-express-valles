@@ -1,6 +1,53 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/servicios/cambio-de-cerradura",
+      "destination": "/servicios/cambio-de-bombin",
+      "permanent": true
+    },
+    {
+      "source": "/servicios/cerrajero-24-horas",
+      "destination": "/servicios/cerrajero-noche-festivo",
+      "permanent": true
+    },
+    {
+      "source": "/zonas/barbera-del-valles",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/zonas/cerdanyola-del-valles",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/zonas/granollers",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/zonas/martorelles",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/zonas/parets-del-valles",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/zonas/sabadell",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/zonas/sant-fost-de-campsentelles",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
@@ -12,15 +59,6 @@
         {
           "key": "Referrer-Policy",
           "value": "strict-origin-when-cross-origin"
-        }
-      ]
-    },
-    {
-      "source": "/assets/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
         }
       ]
     }
