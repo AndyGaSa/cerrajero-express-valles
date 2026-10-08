@@ -31,7 +31,7 @@ p { color: var(--muted); }
 .site-nav.open { display: block; position: absolute; left: 0; right: 0; top: 100%; background: var(--bg-alt); padding: .8rem 1rem; }
 .site-nav ul { list-style: none; margin: 0; padding: 0; }
 .site-nav a { display: block; color: var(--text); text-decoration: none; padding: .55rem 0; font-weight: 650; }
-.lang-switch { margin: 0 0 0 auto; font-size: .78rem; letter-spacing: .08em; }
+.lang-switch { display: none; }
 .lang-switch a { color: var(--muted); text-decoration: none; margin: 0 .15rem; }
 .lang-switch a[aria-current="true"] { color: #f3f6fb; }
 .header-cta { display: none; }
@@ -65,4 +65,20 @@ p { color: var(--muted); }
   .footer-grid { grid-template-columns: 1.3fr 1fr 1fr; }
   .sticky-call { display: none; }
   .site-footer { padding-bottom: 1.6rem; }
+}
+
+.urgent-bar { background: #ea580c; color: #fff; text-align: center; font-weight: 750; font-size: .92rem; }
+.urgent-bar a { color: #fff; text-decoration: none; display: block; padding: .45rem .8rem; }
+.lang-dd { position: relative; margin-left: auto; }
+.lang-dd summary { list-style: none; display: inline-flex; align-items: center; gap: .35rem; min-height: 40px; padding: 0 .7rem; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); color: var(--text); cursor: pointer; font-weight: 700; }
+.lang-dd summary::-webkit-details-marker { display: none; }
+.lang-menu { position: absolute; right: 0; top: calc(100% + .35rem); min-width: 140px; background: var(--bg-alt); border: 1px solid var(--border); border-radius: 12px; padding: .35rem; z-index: 30; display: flex; flex-direction: column; }
+.lang-menu a { color: var(--text); text-decoration: none; padding: .55rem .7rem; border-radius: 8px; font-weight: 650; }
+.lang-menu a[aria-current="true"] { background: var(--surface); }
+.steps { display: grid; gap: .75rem; }
+.step { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1rem; }
+.step b { color: #ea580c; }
+@media (min-width: 800px) {
+  .steps { grid-template-columns: repeat(3, 1fr); }
+  .lang-dd { margin-left: 0; }
 }
