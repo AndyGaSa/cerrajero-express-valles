@@ -43,12 +43,13 @@
     });
   });
 
-  // Visitas y clics en Llamar / WhatsApp. El script solo mide si Analytics está activado en Vercel.
+  // Vercel Web Analytics - using @vercel/analytics CDN package
+  // Tracks page views automatically and custom events for call/WhatsApp clicks
   window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-  var insights = document.createElement('script');
-  insights.defer = true;
-  insights.src = '/_vercel/insights/script.js';
-  document.head.appendChild(insights);
+  var analytics = document.createElement('script');
+  analytics.defer = true;
+  analytics.src = 'https://cdn.vercel-insights.com/v1/script.js';
+  document.head.appendChild(analytics);
 
   document.addEventListener('click', function (event) {
     var link = event.target.closest('a');
