@@ -42,4 +42,23 @@
       if (btn) btn.setAttribute('aria-expanded', 'false');
     });
   });
+
+  // Visitas y clics en Llamar / WhatsApp. El script solo mide si Analytics está activado en Vercel.
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  var insights = document.createElement('script');
+  insights.defer = true;
+  insights.src = '/_vercel/insights/script.js';
+  document.head.appendChild(insights);
+
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest('a');
+    if (!link) return;
+    var href = link.getAttribute('href') || '';
+    var name = href.indexOf('tel:') === 0 ? 'call_click' : (href.indexOf('wa.me') !== -1 ? 'whatsapp_click' : '');
+    if (!name) return;
+    window.va('event', {
+      name: name,
+      data: { path: location.pathname }
+    });
+  });
 })();
